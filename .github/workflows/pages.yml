@@ -1,4 +1,4 @@
-name: Build & Deploy (Encrypted)
+name: Build & Deploy
 
 on:
   push:
@@ -21,16 +21,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"   # any LTS is fine
-          cache: "npm"         # speed-ups for npm
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Copy static files
+        run: |
+          rm -rf dist
+          mkdir -p dist
+          rsync -av --delete \
+            --exclude '.git*' \
+            --exclude '.github' \
+            ./ dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+
   deploy:
     environment:
       name: github-pages
