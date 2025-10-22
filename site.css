@@ -15,7 +15,7 @@
   height: 100%;
   object-fit: cover;
   /* fill + crop top/bottom */
-  object-position: 70% 50%;
+  object-position: 75% 55%;
   /* nudge crop upward; tweak to taste */
   display: block;
 }
