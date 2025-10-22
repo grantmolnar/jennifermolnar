@@ -1,15 +1,21 @@
 /* Reusable hero “slot”: keeps 960×592 look while cropping tall photos */
 .hero {
-  max-width: 960px;          /* matches the template’s 960px grid */
-  margin: 0 auto;            /* center the image row */
-  aspect-ratio: 960 / 592;   /* keep the old wide slot */
-  overflow: hidden;          /* crop excess */
+  max-width: 960px;
+  /* matches the template’s 960px grid */
+  margin: 0 auto;
+  /* center the image row */
+  aspect-ratio: 960 / 592;
+  /* keep the old wide slot */
+  overflow: hidden;
+  /* crop excess */
 }
 
-.hero > img {
+.hero>img {
   width: 100%;
   height: 100%;
-  object-fit: cover;         /* fill + crop top/bottom */
-  object-position: 50% 30%;  /* nudge crop upward; tweak to taste */
+  object-fit: cover;
+  /* fill + crop top/bottom */
+  object-position: 40% 20%;
+  /* nudge crop upward; tweak to taste */
   display: block;
 }
