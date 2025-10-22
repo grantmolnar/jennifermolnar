@@ -19,3 +19,67 @@
   /* nudge crop upward; tweak to taste */
   display: block;
 }
+
+/* Consolidated styles from individual pages */
+.publication-list, .bullet-list {
+  padding-left: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+.publication-list li,
+.bullet-list li {
+  margin: 0 0 1rem 0;
+}
+.bullet-list {
+  list-style: disc outside;
+}
+.pub-authors {
+  font-weight: 600;
+}
+.pub-links a {
+  margin-right: 6px;
+}
+main {
+  display: block;
+}
+main h2 {
+  margin-top: 0.25rem;
+}
+.courses {
+  font-size: 16px;
+}
+.courses h3 {
+  color: rgb(171, 120, 55);
+  margin-bottom: 0.25rem;
+}
+.courses ul {
+  margin: 0 0 1rem 0;
+  padding-left: 1.25rem;
+}
+.poem {
+  font-size: 16px;
+  color: #000;
+}
+.poem-title {
+  color: rgb(171, 120, 55);
+}
+.toggle {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.toggle:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.section {
+  margin-bottom: 1.5rem;
+}
+.intro {
+  margin-bottom: 1rem;
+}
+
