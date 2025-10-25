@@ -362,14 +362,15 @@ body.freestyle01 #footer p a:hover {
 
   margin: 0 auto;
 
-  aspect-ratio: 960 / 592;
-
-  overflow: hidden;
-
-
 }
 
-.hero>img {
+/* BEM variant: cover-cropped hero */
+.hero--cover {
+  aspect-ratio: 960 / 592;
+  overflow: hidden;
+}
+
+.hero--cover > img {
 
   width: 100%;
   height: 100%;
@@ -399,4 +400,68 @@ body.freestyle01.maroon ul.menu li a:hover {
 
   border-color: #7a0019;
 
+}
+
+/* ===== Moved inline styles: music.html ===== */
+/* Footnote styling (moved from music.html) */
+a.fn-ref { text-decoration: none; }
+sup { line-height: 0; }
+
+.footnotes {
+  margin-top: 2rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.95em;
+}
+.footnotes ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.footnotes li {
+  margin: 0.5rem 0;
+}
+a.fn-back { text-decoration: none; margin-left: 0.35rem; }
+
+@media print {
+  a.fn-ref { color: inherit; }
+  a.fn-back { display: none; } /* don't show the ↩ in print */
+}
+
+/* ===== Moved inline styles: research.html ===== */
+/* Research page lists (moved from research.html) */
+.publication-list { padding-left: 1.25rem; margin: 0 0 1rem 0; }
+.publication-list li { margin: 0 0 1rem 0; }
+.bullet-list { list-style: disc outside; padding-left: 1.25rem; margin: 0 0 1rem 0; }
+.bullet-list li { margin: 0 0 1rem 0; }
+.pub-authors { font-weight: 600; }
+.pub-links a { margin-right: 6px; }
+
+/* ===== Moved inline styles: contact.html ===== */
+/* Contact page styles (moved from contact.html) */
+.poem { font-size: 16px; color: #000; }
+.poem-title { color: rgb(171, 120, 55); }
+
+.toggle {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.toggle:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+
+.section { margin-bottom: 1.5rem; }
+.intro { margin-bottom: 1rem; }
+
+/* ===== Moved inline styles: no-crop hero modifier ===== */
+/* Page-level modifier for non-cropped hero images */
+
+.no-crop .hero--cover > img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
