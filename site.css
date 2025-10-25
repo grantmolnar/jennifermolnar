@@ -19,18 +19,3 @@
   /* nudge crop upward; tweak to taste */
   display: block;
 }
-
-body.maroon a {
-  color: #7a0019;
-}
-
-body.maroon h1,
-body.maroon h2,
-body.maroon h3 {
-  color: #7a0019;
-}
-
-body.freestyle01.maroon ul.menu li a:hover,
-body.freestyle01.maroon ul.menu li a.current {
-  border-color: #7a0019;
-}
