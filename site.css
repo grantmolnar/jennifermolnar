@@ -34,3 +34,29 @@ body.freestyle01.maroon ul.menu li a:hover,
 body.freestyle01.maroon ul.menu li a.current {
   border-color: #7a0019;
 }
+
+/* === Shared utilities extracted from page-specific styles =================== */
+
+/* Footnotes (used on music.html), matches previous inline styles */
+a.fn-ref { text-decoration: none; }
+sup { line-height: 0; }
+.footnotes { margin-top: 2rem; padding-top: 0.75rem; border-top: 1px solid #ddd; font-size: 0.95em; }
+.footnotes ol { margin: 0; padding-left: 1.25rem; }
+.footnotes li { margin: 0.5rem 0; }
+a.fn-back { text-decoration: none; margin-left: 0.35rem; }
+@media print {
+  a.fn-ref { color: inherit; }
+  a.fn-back { display: none; } /* hide ↩ in print */
+}
+
+/* Publication list / bullets (used on research.html) */
+.publication-list { padding-left: 1.25rem; margin: 0 0 1rem 0; }
+.publication-list li { margin: 0 0 1rem 0; }
+.bullet-list { list-style: disc outside; padding-left: 1.25rem; margin: 0 0 1rem 0; }
+.bullet-list li { margin: 0 0 1rem 0; }
+.pub-authors { font-weight: 600; }
+.pub-links a { margin-right: 6px; }
+
+/* Safe hero defaults (a simple block image if aspect-ratio is unsupported) */
+.hero { display: block; }
+main { display: block; }
