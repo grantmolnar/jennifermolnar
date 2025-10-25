@@ -539,3 +539,25 @@ body.freestyle01 #footer p a {
 body.freestyle01 #footer p a:hover {
     color: #555;
 }
+
+/* Reusable hero “slot”: keeps 960×592 look while cropping tall photos */
+.hero {
+    max-width: 960px;
+    /* matches the template’s 960px grid */
+    margin: 0 auto;
+    /* center the image row */
+    aspect-ratio: 960 / 592;
+    /* keep the old wide slot */
+    overflow: hidden;
+    /* crop excess */
+}
+
+.hero>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* fill + crop top/bottom */
+    object-position: 75% 55%;
+    /* nudge crop upward; tweak to taste */
+    display: block;
+}
