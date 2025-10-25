@@ -99,6 +99,7 @@ h3 {
   float: left;
   margin: 0 10px;
   overflow: hidden;
+  float: left;
   display: inline;
 }
 
@@ -437,7 +438,7 @@ a.fn-back { text-decoration: none; margin-left: 0.35rem; }
 
 /* ===== Moved inline styles: contact.html ===== */
 /* Contact page styles (moved from contact.html) */
-.poem { font-size: 16px; color: #000; margin: 0 0 15px 0; }
+.poem { font-size: 16px; color: #000; }
 .poem-title { color: rgb(171, 120, 55); }
 
 .toggle {
