@@ -28,9 +28,8 @@ ol {
 }
 
 h1 {
-  color: #888;
-  font-size: 3.6em;
-  margin-bottom: 0;
+font-size: 3.6em
+margin-bottom: 0
 }
 
 h1 a {
@@ -72,11 +71,12 @@ h3 {
   background: #0a0a0a url(images/insidebg.jpg) top center no-repeat;
 }
 
-#footer .col {
-  color: #555;
-  border-top: 1px dotted #1a1a1a;
-  padding: 20px 0;
+#footer  .col {
+  float: left;
+  margin: 0 10px;
+  overflow: hidden;
 }
+
 
 #footer p {
   text-align: center;
@@ -291,12 +291,8 @@ body.freestyle01 p.slogan {
 
 body.freestyle01 h1 {
   line-height: 1.7em;
-}
-
-body.freestyle01 h1 {
   font-size: 2.6em;
 }
-
 body.freestyle01 h2 {
   font-size: 1.8em;
 }
@@ -438,7 +434,9 @@ a.fn-back { text-decoration: none; margin-left: 0.35rem; }
 
 /* ===== Moved inline styles: contact.html ===== */
 /* Contact page styles (moved from contact.html) */
-.poem { font-size: 16px; color: #000; }
+.poem { font-size: 16px; color: #000;
+  margin: 0 0 15px 0;
+}
 .poem-title { color: rgb(171, 120, 55); }
 
 .toggle {
